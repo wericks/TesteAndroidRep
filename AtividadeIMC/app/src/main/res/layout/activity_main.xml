@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/tView_DigPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digite o seu Peso" />
+
+    <EditText
+        android:id="@+id/edt_Peso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digite a sua Altura em Centimetros" />
+
+    <EditText
+        android:id="@+id/edt_Altura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/tView_selectSexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecione o seu Sexo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/rg_Select"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:measureWithLargestChild="true"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_Fem"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:paddingLeft="8dp"
+                    android:text="Feminino" />
+
+                <RadioButton
+                    android:id="@+id/rb_Masc"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:paddingLeft="8dp"
+                    android:text="Masculino" />
+
+            </RadioGroup>
+        </TableRow>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tView_Alimento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Selecione a sua alimentação" />
+
+    <CheckBox
+        android:id="@+id/cb_Arroz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Arroz" />
+
+    <CheckBox
+        android:id="@+id/cb_Carne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Carne Vermelha" />
+
+    <CheckBox
+        android:id="@+id/cb_Peixe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Peixe" />
+
+    <CheckBox
+        android:id="@+id/cb_Macarrao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Macarrão" />
+
+    <CheckBox
+        android:id="@+id/cb_salad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salada" />
+
+    <Button
+        android:id="@+id/bt_CalcImc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular IMC" />
+
+</LinearLayout>
+
+
+
+
